@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form>
+        <!-- test是文本框 用户可以在里面输入任何文字 ，value值属性，提示用户，maxlength属性是用来限制用户输入的长度-->
+        用户名： <input type="text" value="请输入用户名" maxlength="6"> <br>
+        <!-- password密码框，用户输入的密码看不见 -->
+        密码：<input type="password"> <br>
+        <!-- radio单选框，可以结合name来实现多选一 ,且name里面的值必须一样，-->
+        <!-- checked这个是结合单选框和复选框来使用的，目的是为了打开页面的时候默认选中 -->
+        性别：男 <input type="radio" name="sex"> 女 <input type="radio" name="sex"> <br>
+        <!-- 复选框checkbox，可实现多选 -->
+        爱好： 吃饭 <input type="checkbox"> 睡觉 <input type="checkbox"> 打篮球 <input type="checkbox"><br>
+        <!-- submit是提交按钮，value之=值可更改里面的信息 -->
+        <input type="submit" value="免费注册"> <br>
+        <!-- reset重置按钮，可以把输入的信息恢复到初始状态 -->
+        <input type="reset" value="重置">
+        <!-- 普通按钮button  后期搭配js来使用-->
+        <input type="button" value="发送短信验证码"><br>
+        <!-- 文件域 file，可以用来上传文件 -->
+        <input type="file" value="上传文件">
+
+
+
+    </form>
+
+</body>
+
+</html>

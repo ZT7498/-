@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .box {
+            position: relative;
+
+            width: 520px;
+            height: 280px;
+            margin: 100px auto;
+
+        }
+
+        .box img {
+            width: 520px;
+            height: 280px;
+            border-radius: 10px;
+        }
+
+        .prev {
+            position: absolute;
+            top: 50%;
+            width: 20px;
+            height: 35px;
+            background-color: rgba(0, 0, 0, .3);
+            border-radius: 0 10px 10px 0;
+        }
+
+        a {
+            line-height: 35px;
+            color: #fff;
+        }
+
+        .next {
+            position: absolute;
+            top: 50%;
+            right: 0;
+            width: 20px;
+            height: 35px;
+            background-color: rgba(0, 0, 0, .3);
+            border-radius: 10px 0 0 10px;
+        }
+
+        .radious {
+            position: absolute;
+            text-align: center;
+            left: 50%;
+            margin-left: -42px;
+            bottom: 15px;
+            width: 85px;
+            height: 15px;
+            background-color: rgba(255, 255, 255, .3);
+            border-radius: 5px;
+
+        }
+
+        .radious li {
+            float: left;
+            background-color: white;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            margin: 3px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <img src="../imp/tb.png" alt="">
+        <div class="prev"><a href="#"> &lt; </a>
+        </div>
+        <div class="next"><a href="#"> > </a></div>
+        <ul class="radious">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+</body>
+
+</html>

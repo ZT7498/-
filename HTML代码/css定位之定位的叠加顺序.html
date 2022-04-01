@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 200px;
+            height: 200px;
+            position: absolute;
+        }
+
+        /* 都加定位的时候按照书写的顺序后来居上，当给xionda加了一个z-index：1;的时候，xionda则会把其他两个盒子压住， */
+        .xionda {
+            background-color: skyblue;
+            top: 50px;
+            left: 50px;
+            z-index: 1;
+        }
+
+        /* 
+        当给xioner一个z-index：2;的时候，则熊二的这个盒子会把其他的两个盒子压住  数字越大，就在最上面*/
+        .xioner {
+            background-color: red;
+            top: 100px;
+            left: 100px;
+            z-index: 2;
+        }
+
+        .guangtq {
+            background-color: springgreen;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box xionda"> 熊大</div>
+    <div class="box xioner">熊二</div>
+    <div class="box guangtq">光头强</div>
+</body>
+
+</html>

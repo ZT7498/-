@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        .zx {
+            position: relative;
+            padding: 200px;
+            width: 800px;
+            height: 800px;
+            background-color: skyblue;
+
+        }
+
+        .father {
+            /* position: relative; */
+            width: 500px;
+            height: 500px;
+            background-color: pink;
+        }
+
+        .son {
+            /* absolute是绝对定位，在没有父级元素和祖先级元素的时候，和浏览器想比较，如果有父级元素的时候 且父级元素有定位的时候（三个定位其中一个就行，静态定位除外），则是以父元素的位置定位，如果父级元素没有定位，祖先级元素有定位，则是以祖先级元素定位，如果祖先级元素和父元素都有定位的情况下，则是就近原则,绝对定位不会保留原来的位置，其他盒子会把原来的位置占有 */
+            position: absolute;
+            /* top: 200px;
+            left: 550px; */
+            right: 200px;
+            top: 100px;
+            width: 200px;
+            height: 200px;
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="zx">
+        <div class="father">
+            <div class="son"></div>
+        </div>
+    </div>
+
+</body>
+
+</html>

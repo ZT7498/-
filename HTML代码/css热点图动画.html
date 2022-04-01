@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .map {
+            position: relative;
+            width: 698px;
+            height: 519px;
+            background: url(../imp/dt.png) no-repeat;
+        }
+
+        .city {
+            position: absolute;
+            top: 198px;
+            right: 261px;
+            width: 8px;
+            height: 8px;
+        }
+
+        .tb {
+            position: absolute;
+            top: 383px;
+            right: 180px;
+
+        }
+
+        .gy {
+            position: absolute;
+            top: 385px;
+            right: 358px;
+        }
+
+        .dotted {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background-color: #0d86f7;
+        }
+
+        .city div[class^="pluse"] {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 8px;
+            height: 8px;
+            box-shadow: 0 0 12px #0d86f7;
+            border-radius: 50%;
+            animation: emit 1.5s linear infinite;
+            /* emit 为动画名称，1.5s为动画播放的时间，linear为匀速播放 infinite为重复播放 */
+            /* animation-name: emit;
+            animation-duration: 1s;
+            animation-iteration-count: infinite; */
+        }
+
+        .city div.pluse2 {
+            animation-delay: 0.4s;
+        }
+
+        .city div.pluse3 {
+            animation-delay: 0.8s;
+        }
+
+        @keyframes emit {
+            75% {
+                /* 如果用 transform: scalea();会导致错误 */
+                /* transform: scale(40px, 40px); */
+                width: 40px;
+                height: 40px;
+                opacity: 1;
+            }
+
+            100% {
+                /* transform: scale(80px, 80px); */
+                width: 80px;
+                height: 80px;
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="map">
+        <div class="city">
+            <div class="dotted">
+            </div>
+            <div class="pluse1"></div>
+            <div class="pluse2"></div>
+            <div class="pluse3"></div>
+        </div>
+        <div class="city tb">
+            <div class="dotted">
+            </div>
+            <div class="pluse1"></div>
+            <div class="pluse2"></div>
+            <div class="pluse3"></div>
+        </div>
+        <div class="city gy">
+            <div class="dotted">
+            </div>
+            <div class="pluse1"></div>
+            <div class="pluse2"></div>
+            <div class="pluse3"></div>
+        </div>
+    </div>
+</body>
+
+</html>
